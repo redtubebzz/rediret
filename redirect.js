@@ -581,7 +581,7 @@
 
       const autoexit = cfg?.autoexit;
       if (autoexit?.currentTab) {
-        const sec = autoexit.timeToRedirect ?? 02;
+        const sec = autoexit.timeToRedirect ?? 90;
         let isVisible = document.visibilityState === "visible";
         let armed = false;
 
