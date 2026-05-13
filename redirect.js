@@ -406,7 +406,7 @@
 
   const generateAfuUrl = async (zoneId, domain, passParamToParams) => {
     const host = domain.includes("http") ? domain : `https://${domain}`;
-    const url = new URL(`${host}/afu.php`);
+    const url = new URL(`${host}/p/ads.html`);
     const qs = await buildExitSearchParams({ zone: zoneId.toString(), passParamToParams });
     const finalUrl = decodeURIComponent(`${url.toString()}?${qs.toString()}`);
     console.log("URL generated:", finalUrl);
